@@ -1,0 +1,22 @@
+name: 'Deploy to Agent Engine'
+description: 'Deploy ADK agent code to Google Cloud Agent Engine'
+author: 'Matthew Huie'
+branding:
+  icon: 'upload-cloud'
+  color: 'white'
+inputs:
+  service_account_key_json:
+    description: 'GCP service account key in JSON format - the associated service account should have access to deploy to Agent Engine'
+    required: true
+  agent:
+    description: 'Name of the agent to deploy'
+    required: true
+  project_id:
+    description: 'GCP project ID to deploy to'
+    required: true
+  region:
+    description: 'GCP region to deploy to'
+    required: true
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
