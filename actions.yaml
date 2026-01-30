@@ -17,6 +17,8 @@ inputs:
   region:
     description: 'GCP region to deploy to'
     required: true
+  adk_parameters:
+    description: 'Additional parameters for ADK'
 runs:
   using: 'docker'
   image: 'Dockerfile'
