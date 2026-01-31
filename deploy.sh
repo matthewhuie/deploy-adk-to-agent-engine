@@ -2,7 +2,7 @@
 
 set -x
 
-echo "$INPUT_SERVICE_ACCOUNT_KEY_JSON" > /key-file.json
+echo -e "$INPUT_SERVICE_ACCOUNT_KEY_JSON" > /key-file.json
 export GOOGLE_APPLICATION_CREDENTIALS="/key-file.json"
 gcloud auth activate-service-account --key-file=/key-file.json
 
