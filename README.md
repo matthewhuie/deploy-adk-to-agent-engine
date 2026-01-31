@@ -4,16 +4,14 @@ This is a GitHub Action that will deploy ADK agent code to Agent Engine on Googl
 ## Getting Started
 Include this action as a step in a workflow.
 ```yaml
-jobs:
-  deploy_adk:
-    steps:
-      - name: Deploy to Agent Engine
-        uses: matthewhuie/deploy-adk-to-agent-engine
-        with:
-          service_account_key_json: ${{ secrets.SERVICE_ACCOUNT_KEY_JSON }}
-          agent: agent_name
-          project_id: gcp-project-id
-          region: us-central1
+steps:
+  - name: Deploy to Agent Engine
+    uses: matthewhuie/deploy-adk-to-agent-engine
+    with:
+      service_account_key_json: ${{ secrets.SERVICE_ACCOUNT_KEY_JSON }}
+      agent: agent_name
+      project_id: gcp-project-id
+      region: us-central1
 ```
 
 ## Inputs
