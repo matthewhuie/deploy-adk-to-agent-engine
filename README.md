@@ -8,7 +8,6 @@ steps:
   - name: Deploy to Agent Engine
     uses: matthewhuie/deploy-adk-to-agent-engine
     with:
-      service_account_key_json: ${{ secrets.SERVICE_ACCOUNT_KEY_JSON }}
       agent: agent_name
       project_id: gcp-project-id
       region: us-central1
@@ -17,7 +16,6 @@ steps:
 ## Inputs
 | Input | Required? | Description |
 |---|---|---|
-| `service_account_key_json` | Required | GCP service account key in JSON format - the associated service account should have access to deploy to Agent Engine |
 | `agent` | Required | Name of the agent to deploy |
 | `project_id` | Required | GCP project ID to deploy to |
 | `region` | Required | GCP region to deploy to |

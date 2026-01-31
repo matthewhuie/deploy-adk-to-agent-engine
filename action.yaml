@@ -5,9 +5,6 @@ branding:
   icon: 'upload-cloud'
   color: 'white'
 inputs:
-  service_account_key_json:
-    description: 'GCP service account key in JSON format - the associated service account should have access to deploy to Agent Engine'
-    required: true
   agent:
     description: 'Name of the agent to deploy'
     required: true
