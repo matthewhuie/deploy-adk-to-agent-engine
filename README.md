@@ -22,8 +22,8 @@ steps:
 
 ## TODO
 - [x] Working MVP
+- [x] Publish to GitHub Actions Marketplace
 - [ ] More error checking
-- [ ] Publish to GitHub Actions Marketplace
 - [ ] More documentation
 
 ## Links
