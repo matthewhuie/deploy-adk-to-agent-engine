@@ -23,7 +23,6 @@ jobs:
 | `agent` | Required | Name of the agent to deploy |
 | `project_id` | Required | GCP project ID to deploy to |
 | `region` | Required | GCP region to deploy to |
-| `adk_parameters` | Optional | Additional parameters for ADK |
 
 ## TODO
 - [x] Working MVP
